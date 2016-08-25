@@ -8,3 +8,5 @@ print(str+" my name is Varis Carey")
 print '\t my name is Michael Pilosov (first!)'
 print '\t my name is Jordan Hall'
 print '\t My name is Megan Sorenson'
+print '\t my name is Jing Hu'
+print '\t my name is Yuanlong Wang'
