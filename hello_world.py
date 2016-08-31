@@ -10,5 +10,8 @@ print '\t my name is Jing Hu'
 print '\t my name is Yuanlong Wang'
 print '\t my name is Mitchell Matheny'  
 print '\t my name is Daniel Bielich'
-print '\t my name is Elise Reed'.
-
+print '\t my name is Elise Reed'
+print '\t my name is Chau Nguyen'
+print '\t my name is Natalia Villegas-Franco.'
+print '\t my name is Alexa Desautels'
+print "\t My name is Doug Cheney and I'm a pusher."
