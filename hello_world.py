@@ -1,5 +1,3 @@
-
-
 # set up the Hello World string
 str="Hello M5660,"
 #In python you can concatentate strings using the addition(+) operator
