@@ -1,5 +1,3 @@
-
-
 # set up the Hello World string
 str="Hello M5660,"
 #In python you can concatentate strings using the addition(+) operator
@@ -14,3 +12,8 @@ print '\t my name is Mitchell Matheny'
 print '\t my name is Daniel Bielich'
 print '\t my name is Elise Reed'
 print '\t my name is Chau Nguyen'
+print '\t my name is Natalia Villegas-Franco.'
+print '\t my name is Alexa Desautels'
+print "\t My name is Doug Cheney and I'm a pusher."
+print '\t My name is Shanon Yeung.'
+
