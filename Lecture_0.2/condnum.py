@@ -6,7 +6,7 @@ def pfun(x,a):
     ''Computes polynomial in basis {1,x^2, x^3, ..., x^n} given coefficients 
     '' a = [a_0, a_1, ... a_n] 
     a: {array-like} of coefficients of a polynomial of degree n = len(a)-1
-    x: single value for which 
+    x: {array-like} list of values to compute polynomial for.
     '''
     x = np.array(x)
     return [np.dot(a,np.power(x[i],range(len(a))) ) for i in range(len(x))]
