@@ -17,7 +17,7 @@ def cond_pfun(x,a):
     '''
     return np.divide(
                 np.multiply(np.abs(x), 
-                            np.abs( np.sum( pfun(x, [n*a[n+1] for n in range(len(a) - 1)] ) ) ) ), 
+                            np.abs( pfun(x, [n*a[n] for n in range(1, len(a))] ) ) ), 
                 np.abs(pfun(x,a)))
 '''
 # a little example to make sure our polynomial-generating code works and 
