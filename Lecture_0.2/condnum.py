@@ -38,7 +38,12 @@ plt.show()
 a = [-2030, 5741, 1, -11482, 8118]
 x0 = [0.707107]
 condx0 = cond_pfun(x0,a)[0]
-print 'Relative condition number for x = %f is '%x0[0], condx0, '\n' # quite ill-conditioned
+cond_x0 = cond_pfun([-x0[0]],a)[0]
+cond0 = cond_pfun([0],a)[0]
+print 'Relative condition number for x = %f (p(x) = %d) is '%(x0[0], pfun(x0,a)[0]), condx0, '\n' # quite ill-conditioned
+print 'Relative condition number for x = %f (p(x) = %d) is '%(-x0[0], pfun([-x0[0]],a)[0]), cond_x0, '\n' # quite ill-conditioned
+print 'Relative condition number for x = %f (p(x) = %d) is '%(0, pfun([0],a)[0]), cond0, '\n' # quite ill-conditioned
+
 x_res = 10000
 x_min = -1.0
 x_max = 1.0
