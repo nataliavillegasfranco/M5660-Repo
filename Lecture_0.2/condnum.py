@@ -41,21 +41,22 @@ condx0 = cond_pfun(x0,a)[0]
 cond_x0 = cond_pfun([-x0[0]],a)[0]
 cond0 = cond_pfun([0],a)[0]
 print 'Relative condition number for x = %f (p(x) = %d) is '%(x0[0], pfun(x0,a)[0]), condx0, '\n' # quite ill-conditioned
-print 'Relative condition number for x = %f (p(x) = %d) is '%(-x0[0], pfun([-x0[0]],a)[0]), cond_x0, '\n' # quite ill-conditioned
-print 'Relative condition number for x = %f (p(x) = %d) is '%(0, pfun([0],a)[0]), cond0, '\n' # quite ill-conditioned
+print 'Relative condition number for x = %f (p(x) = %d) is '%(-x0[0], pfun([-x0[0]],a)[0]), cond_x0, '\n' 
+print 'Relative condition number for x = %f (p(x) = %d) is '%(0, pfun([0],a)[0]), cond0, '\n'
 
 x_res = 10000
 x_min = -1.0
 x_max = 1.0
-x = np.linspace(x_min, x_max, x_res) # let's investigate the neighborhood 
+x = np.linspace(x_min, x_max, x_res) # let's investigate the neighborhood of where the condition number blows up
 conds = cond_pfun(x,a)
 fig, ax = plt.subplots()
 ax.plot( x, cond_pfun(x,a) )
 plt.axvline(x0[0], color='r', linestyle='--') # vertical line
-plt.axvline(0, color='r', linestyle='--') # vertical line
-plt.axvline(-x0[0], color='r', linestyle='--') # vertical line
+plt.axvline(0, color='r', linestyle='--') 
+plt.axvline(-x0[0], color='r', linestyle='--')
 ax.plot([x_min, x_max],np.array([1, 1])*np.min(conds), color='b', linestyle='--') # horizontal line
-ax.plot([x_min, x_max],np.array([1, 1])*condx0, color='b', linestyle='--') # horizontal line
+ax.plot([x_min, x_max],np.array([1, 1])*np.max(conds), color='b', linestyle='--')
+ax.plot([x_min, x_max],np.array([1, 1])*condx0, color='b', linestyle='--') 
 
 plt.xlabel('$x$',fontsize=14)
 plt.ylabel('$\kappa_{p(x)}$', fontsize=16)
