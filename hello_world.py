@@ -10,7 +10,7 @@ print '\t My name is Megan Sorenson and I'm a pusher'
 print '\t my name is Jing Hu'
 print "\t my name is Yuanlong Wang and I'm a pusher."
 print '\t my name is Mitchell Matheny and Im a pusher'  
-print '\t my name is Elise Reed'
+print '\t ny name is Elise Reed and I am a pusher.'
 print '\t my name is Chau Nguyen'
 print "\t My name is Doug Cheney and I'm a pusher."
 print '\t my name is Alexa Desautels'
