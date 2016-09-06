@@ -9,7 +9,7 @@ print '\t My name is Megan Sorenson'
 print '\t my name is Jing Hu'
 print "\t my name is Yuanlong Wang and I'm a pusher."
 print '\t my name is Mitchell Matheny'  
-print '\t my name is Daniel Bielich'
+print '\t my name is Daniel Bielich and I'm a pusher'
 print '\t my name is Elise Reed'
 print '\t my name is Chau Nguyen'
 print '\t my name is Natalia Villegas-Franco.'
